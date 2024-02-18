@@ -21,38 +21,31 @@ function addItem() {
 
 function displayItem(i) {
     var name = (items[i]).itemName;
-    var price = (items[i]).price;
+    var price = "$" + (items[i]).price;
     const node = document.createElement("div");
-    node.className = "item";
+    node.className = "item-div";
+    node.innerHTML = `
+        <div>
+            <input type="checkbox">
+        </div>
+        <p>${name}</p>
+        <p>${price}</p>
+        <button>Delete</button>
+    `;
 
-    var checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.addEventListener("change", changeColour);
-    node.appendChild(checkbox);
-    
-    var textNode1 = document.createTextNode(name);
-    var textNode2 = document.createTextNode(price);
+    node.querySelector("input[type='checkbox']").addEventListener("change", changeColour);
+    node.querySelector("button").addEventListener("click", deleteItem);
 
-    node.appendChild(textNode1);
-    node.appendChild(textNode2);
-
-
-    var deleteButton = document.createElement("button");
-    deleteButton.textContent = "Delete";
-    deleteButton.addEventListener("click", deleteItem);
-    node.appendChild(deleteButton);
-
-    const element = document.getElementById("itemList");
+    const element = document.getElementById("item-list");
     element.appendChild(node);
 }
 
 function deleteItem() {
     this.parentNode.remove();
-    // make sure to delete from list
 }
 
 function changeColour() {
-    var div = this.parentNode;
+    var div = this.parentNode.parentNode;
     if (this.checked) {
         div.classList.add("checked");
     } else {

@@ -1,7 +1,6 @@
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-
 }
 
 body {
@@ -9,32 +8,102 @@ body {
     padding: 20px
 }
 
-.addbutton {
-    border-radius: 200px;
-    background: var(--Primary-Purple, #E4AA39);
-  }
-
-.addbutton:hover {
-    background: rgb(219, 219, 219);
-    color: #E4AA39;
-}
-
-.item {
-    border: 2px solid orange;
-    padding: 15px 32px;
-    margin: 4px 2px;
+.header {
     display: flex;
 }
 
-#itemList {
+#tabby-title {
+    padding:20px;
+    color: rgb(220, 151, 3);
+}
+
+.general-container {
+    fill: #FFF;
+    stroke-width: 1px;
+    stroke: darkslategray;
+}
+
+.main-screen {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    gap:8px;
+}
+
+.main-column {
+    background: #e1e1e1;
+    display: block;
+    width: 50%;
+    align-items: start;
+    padding:20px;
+    border-radius: 7px;
+}
+
+.table {
+    display: flex;
+    background:skyblue;
+    overflow:scroll;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.addgift {
+    border: 1px solid darkslategray;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    gap: 8px;
+}
+
+.input-item {
+    padding: 4px;
+    border: 1px solid darkslategray;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+input {
+   width:100%;
+   box-sizing:border-box;
+   background-color: white;
+   border: 1px darkslategray;
+}
+
+.addbutton {
+    /* border-radius: 200px; */
+    background: rgb(243, 204, 120);
+    width: 50%;
+}
+
+.addbutton:hover {
+    background: rgba(140, 224, 243, 1);
+}
+
+.item-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid darkslategray;
+    border-radius: 7px;
+    padding: 4px 20px;
+    margin: 4px 2px;
+}
+
+#item-list {
     display: block;
 }
 
 .checked {
-    background-color: lightpink;
+    background-color: rgb(243, 204, 120);
 }
 
 .logo {
     width: 125px;
     height: 100px; 
+}
+
+.categories {
+    width: 100%;
+    border: 1px solid darkslategray;
+    border-radius: 7px;
 }
