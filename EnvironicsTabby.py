@@ -14,7 +14,7 @@ city = []
 visitors = []
 
 # Open the text file
-with open('C:\\Users\shahd\OneDrive\Documents\Mac Uni Years\Year 2 (2023-2024)\ElleHacks 24\ClickScapesText.txt', 'r') as file:
+with open('~File Path~', 'r') as file:
     
     next(file)
     
