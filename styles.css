@@ -1,0 +1,40 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 20px;
+    padding: 20px
+}
+
+.addbutton {
+    border-radius: 200px;
+    background: var(--Primary-Purple, #E4AA39);
+  }
+
+.addbutton:hover {
+    background: rgb(219, 219, 219);
+    color: #E4AA39;
+}
+
+.item {
+    border: 2px solid orange;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    display: flex;
+}
+
+#itemList {
+    display: block;
+}
+
+.checked {
+    background-color: lightpink;
+}
+
+.logo {
+    width: 125px;
+    height: 100px; 
+}

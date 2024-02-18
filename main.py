@@ -1,1 +1,0 @@
-print("tabby tabby tabby tbabby")
